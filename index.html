@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+	<title>1Hundred game by Wildeng</title>
+	<!--<link rel="stylesheet" href="assets/gameStyle.css" />-->
+    <link rel="stylesheet" href="assets/alternativeGameStyle.css" />
+    <link rel="stylesheet" href="assets/onehundred-theme/jquery-ui-1.10.4.custom.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="numberGames.js"></script>
+    <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "ba0ae526-d675-4705-8031-96602a305e11", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+    </script>  
+    <script type="text/javascript">
+    	/*$('document').ready(function(){
+    		alert('Window width: ' + $(window).width());
+    		alert('Window height: ' + $(window).height());
+    	});*/
+    </script>
+</head>
+<body>
+	<header class="header">
+		<div class="scoreText">
+			Moves:
+	    </div>
+		<div id="scoreContainer" class="scoreContainer">
+			<span id="score" class="score">&nbsp;</span>
+		</div>
+		<div style="clear:both;"></div>
+	</header>
+	<section class="mainSection">
+		<div class="mainContainer">
+			<article  class="container">
+				<canvas id="main" class="gamefield"></canvas>
+			</article>
+			<aside class="right">
+				<img src="assets/images/one_hundred_long_header.png">
+				<div class="rules">
+					<span class="title">How to play:</span><br />
+					You must fill all cells and reach 100 starting from whenever you want in the grid and following these simple rules: 
+					<ol>
+						<li>You can go right leaving a space of two cells from the previous move.</li>
+						<li>You can go left leaving a space of two cells from the previous move.</li>
+						<li>You can go up leaving a space of two cells from the previous move.</li>
+						<li>You can go down leaving a space of two cells from the previous move.</li>
+						<li>You can even move diagonally, leaving one cell from the previous move.</li>
+						<li>When there aren't any more allowed moves, the game stops.</li>
+				    </ol>
+	 			</div>
+			</aside>
+			
+	    </div>
+	</section>
+	<div style="clear:both;"></div>
+	<footer class="footer">
+		<div id="share">
+			<span class='st_sharethis_large' displayText='ShareThis'></span>
+            <span class='st_facebook_large' displayText='Facebook'></span>
+            <span class='st_twitter_large' displayText='Tweet'></span>
+            <span class='st_linkedin_large' displayText='LinkedIn'></span>
+            <span class='st_googleplus_large' displayText='Google +'></span>
+        </div>
+    <div style="clear:both"></div>
+	<div id="notify" title=""></div>
+	</footer>
+</body>
+</html>
